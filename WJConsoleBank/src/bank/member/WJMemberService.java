@@ -15,7 +15,6 @@ public class WJMemberService implements MemberService{
 	public WJMemberService(MemberDao dao) {
 		super();
 		this.dao = dao;
-		this.dao.save(new Member(ADMIN_ID, ADMIN_PWD, ADMIN_ID, null, null, Member.ADMIN));
 	}
 
 	@Override
@@ -28,6 +27,7 @@ public class WJMemberService implements MemberService{
 
 	@Override
 	public boolean login(String id, String password) {
+		
 		Member m = dao.findById(id);
 		if (m != null && m.getPassword().equals(password)) {
 			loggedMember = m;
@@ -35,6 +35,7 @@ public class WJMemberService implements MemberService{
 		}
 		return false;
 	}
+	
 
 	@Override
 	public Member getLoggedMember() {
