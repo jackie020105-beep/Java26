@@ -38,8 +38,8 @@ public class MemberOracleDao implements MemberDao{
 	            + "FROM BANK_MEMBER";
 	    List<Member> members = new ArrayList<>();
 	    try (Connection conn = DbUtil.getConnection();
-	         PreparedStatement pstmt = conn.prepareStatement(sql);
-	         ResultSet rs = pstmt.executeQuery()) {
+	        PreparedStatement pstmt = conn.prepareStatement(sql);
+	        ResultSet rs = pstmt.executeQuery()) {
 	        while (rs.next()) {
 	            String id = rs.getString("id");
 	            String password = rs.getString("password"); // 2. 비밀번호 읽기
