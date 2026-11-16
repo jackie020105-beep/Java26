@@ -1,4 +1,4 @@
-package Chapter06;
+package homework.Chapter06;
 
 public class ForeignStudent extends Student {
 	String national;

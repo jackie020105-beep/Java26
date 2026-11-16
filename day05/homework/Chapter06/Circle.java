@@ -1,4 +1,4 @@
-package Chapter06;
+package homework.Chapter06;
 
 public class Circle extends CircleColoredCircleTest {
 	final static double PI = 3.14;

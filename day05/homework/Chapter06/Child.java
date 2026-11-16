@@ -1,4 +1,4 @@
-package Chapter06;
+package homework.Chapter06;
 
 public class Child extends Parent {
 	public String name = "사도세자";
