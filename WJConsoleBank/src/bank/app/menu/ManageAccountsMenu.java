@@ -20,6 +20,7 @@ public class ManageAccountsMenu extends ConsoleMenu{
 			case 1 -> ListAllAccounts();
 			case 2 -> ListMemberAccounts();
 			case 0 -> {GoBack(); return;}
+			case -1 -> System.out.println("숫자를 입력해주세요"); 
 			default -> System.out.println("메뉴에 있는 번호를 선택하시오");
 			}
 			

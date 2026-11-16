@@ -23,6 +23,7 @@ public class BankingMenu extends ConsoleMenu {
 			case 5 -> DeleteAccount();
 			case 6 -> new MyInfoMenu(as, ms).run();
 			case 0 -> {logout(); return;}
+			case -1 -> System.out.println("숫자를 입력해주세요"); 
 			default -> System.out.println("메뉴에 있는 번호를 선택하시오");
 			}
 			

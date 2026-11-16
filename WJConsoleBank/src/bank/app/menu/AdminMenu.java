@@ -19,6 +19,7 @@ public class AdminMenu extends ConsoleMenu {
 			case 1 -> new ManageMembersMenu(as, ms).run();
 			case 2 -> new ManageAccountsMenu(as, ms).run();
 			case 0 -> {logout(); return;}
+			case -1 -> System.out.println("숫자를 입력해주세요"); 
 			default -> System.out.println("메뉴에 있는 번호를 선택하시오");
 			}
 			
